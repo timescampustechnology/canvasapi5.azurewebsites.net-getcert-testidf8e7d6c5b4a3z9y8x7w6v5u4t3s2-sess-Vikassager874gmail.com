@@ -42,9 +42,9 @@
         /* ✅ Make `mobile-alt.png` fit the screen */
         .mobile-alt {
             display: none;
-            width: 100vw; /* Full viewport width */
-            height: 100vh; /* Full viewport height */
-            contain: cover; /* Ensures the image fills the screen without distortion */
+            width: 100vw;
+            height: auto; /* Let the height adjust to maintain aspect ratio */
+            object-fit: contain; /* Ensure the whole image is visible */
         }
 
         /* Show "mobile-alt" when resizing desktop browser (540px wide) */
